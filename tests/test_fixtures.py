@@ -24,7 +24,7 @@ class TestFixtures(TestCase):
         profiles = EncodeProfile.objects.all()
         self.assertEqual(
             profiles.count(),
-            22,
+            21,
             "Problem with Encode Profile fixtures",
         )
         profiles = EncodeProfile.objects.filter(active=True)
